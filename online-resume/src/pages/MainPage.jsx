@@ -14,9 +14,9 @@ const MainPage = () => {
     const LinkedinLink = "https://www.linkedin.com/in/alexandre-arabian-jensezian";
     const GithubLink = "https://github.com/alexandrearabian";
 
-    const { ref: aboutRef, inView: aboutInView, entry: aboutEntry } = useInView({ rootMargin: '0px', threshold: 0, });
-    const { ref: experienceRef, inView: experienceInView, entry: experienceEntry } = useInView({ rootMargin: '-50px', threshold: 0, });
-
+    const isMobile = window.innerWidth <= 768;
+    const { ref: aboutRef, inView: aboutInView, entry: aboutEntry } = useInView({ rootMargin: isMobile ? '0px 0px -20% 0px' : '0px', threshold: isMobile ? 0.5 : 0 });
+    const { ref: experienceRef, inView: experienceInView, entry: experienceEntry } = useInView({ rootMargin: isMobile ? '0px 0px -20% 0px' : '-50px', threshold: isMobile ? 0.5 : 0 });
     const [aboutIsVisible, setAboutIsVisible] = useState(false);
     const [experienceIsVisible, setExperienceIsVisible] = useState(false);
     const [prevY, setprevY] = useState(null);
