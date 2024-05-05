@@ -82,17 +82,16 @@ html {
   scroll-behavior: smooth;
 }
 
-.section {
+.desktop-section {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   margin-bottom: 10%;
 }
 
 
 .hidden-section {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(50%);
 }
-
 
 .important {
   color: #535bf2d3;
@@ -199,7 +198,7 @@ html {
 }
 
 .hidden-about-me-despcription {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(50%);
 }
 
@@ -219,7 +218,7 @@ html {
 }
 
 .hidden-experience-job {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(50%);
 }
 
