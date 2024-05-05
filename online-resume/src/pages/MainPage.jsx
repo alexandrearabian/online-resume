@@ -15,11 +15,15 @@ const MainPage = () => {
     const GithubLink = "https://github.com/alexandrearabian";
 
     const isMobile = window.innerWidth <= 768;
-    const { ref: aboutRef, inView: aboutInView, entry: aboutEntry } = useInView({ rootMargin: isMobile ? '0px 0px -20% 0px' : '0px', threshold: isMobile ? 0.5 : 0 });
-    const { ref: experienceRef, inView: experienceInView, entry: experienceEntry } = useInView({ rootMargin: isMobile ? '0px 0px -20% 0px' : '-50px', threshold: isMobile ? 0.5 : 0 });
+
+    const { ref: aboutRef, inView: aboutInView, entry: aboutEntry } = useInView({ rootMargin: '0px', threshold: 0, });
+    const { ref: experienceRef, inView: experienceInView, entry: experienceEntry } = useInView({ rootMargin: '-50px', threshold: 0, });
+
     const [aboutIsVisible, setAboutIsVisible] = useState(false);
     const [experienceIsVisible, setExperienceIsVisible] = useState(false);
     const [prevY, setprevY] = useState(null);
+
+
 
     useEffect(() => {
         if (aboutEntry) {
@@ -102,11 +106,11 @@ const MainPage = () => {
                     </div>
                 </section>
                 <br id='above-about' className='filler-space' />
-                <section ref={aboutRef} id="about" className={`section ${aboutIsVisible ? '' : 'hidden-section'}`}>
+                <section ref={aboutRef} id="about" className={`section ${aboutIsVisible || isMobile ? '' : 'hidden-section'}`}>
                     <AboutMe wordInView={aboutIsVisible} />
                 </section>
                 <br id='above-experience' className='filler-space' />
-                <section ref={experienceRef} id="experience" className={`section ${experienceIsVisible ? '' : 'hidden-section'}`}>
+                <section ref={experienceRef} id="experience" className={`section ${experienceIsVisible || isMobile ? '' : 'hidden-section'}`}>
                     <Experience wordInView={experienceIsVisible} />
                 </section>
 
