@@ -44,7 +44,6 @@ const MainPage = () => {
             const currentY = experienceEntry.boundingClientRect.top;
             if (prevY !== null) {
                 const isScrollingDown = prevY > currentY;
-                console.log(isScrollingDown);
                 if (isScrollingDown) {
                     setExperienceIsVisible(true);
                 }
