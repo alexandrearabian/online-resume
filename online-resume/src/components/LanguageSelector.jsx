@@ -53,31 +53,6 @@ const LanguageSelector = ({ setLanguage, languageSelector, language }) => {
                 >
                     🇪🇸 Español
                 </ul>
-                {/* <ul
-                    style={optionStyle}
-                    onClick={() => setLanguage('fr')}
-                >
-                    🇫🇷 Français
-                </ul>
-                <ul
-                    style={optionStyle}
-                    onClick={() => setLanguage('pt')}
-                >
-                    🇵🇹 Português
-                </ul>
-                <ul
-                    style={optionStyle}
-                    onClick={() => setLanguage('hy')}
-                >
-                    🇦🇲 Հայերեն
-                </ul>
-                <ul
-                    style={optionStyle}
-                    onClick={() => setLanguage('ja')}
-                >
-                    🇯🇵 日本語
-                </ul> */}
-
             </ol>
         </a >
     );

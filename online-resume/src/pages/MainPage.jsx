@@ -7,7 +7,6 @@ import ProfilePicture from '../assets/ProfilePicture.jpeg';
 import Curriculum from '../assets/Alexandre-Arabian-CV-Linkedin.pdf';
 import AboutMe from '../components/AboutMe';
 import Experience from '../components/Experience';
-import TopMenu from '../components/TopMenu';
 import { useInView } from 'react-intersection-observer';
 
 const MainPage = () => {

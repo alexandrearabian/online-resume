@@ -5,13 +5,11 @@ import TopMenu from './components/TopMenu'
 import MainPageSpanish from './pages/MainPageSpanish'
 
 function App() {
-  // Retrieve the stored language from localStorage, defaulting to 'en' if not found
   const [language, setLanguage] = useState(() => {
     const storedLanguage = localStorage.getItem('language');
     return storedLanguage ? storedLanguage : 'en';
   });
 
-  // Store the language choice in localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem('language', language);
   }, [language]);
