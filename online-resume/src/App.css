@@ -316,3 +316,37 @@ html {
     transform: translate(0, 0);
   }
 }
+
+@media (max-width: 768px) {
+  .section {
+    transition: none;
+  }
+
+  .about-me-despcription {
+    transition: none;
+  }
+
+  .experience.job {
+    transition: none;
+  }
+
+  .hidden-about-me-despcription {
+    transform: none;
+    opacity: 1;
+  }
+
+  .hidden-experience-job {
+    transform: none;
+    opacity: 1;
+  }
+
+  .hidden-section {
+    transform: none;
+    opacity: 1;
+  }
+
+  .color-transition-word {
+    color: #535bf2d3;
+  }
+
+}
