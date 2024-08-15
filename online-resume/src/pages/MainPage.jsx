@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import DownloadElement from '../components/DownloadElement';
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { faDownload, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import ProfilePicture from '../assets/ProfilePicture.jpeg';
 import Curriculum from '../assets/Alexandre-Arabian-CV-Linkedin.pdf';

@@ -8,7 +8,7 @@ const TopMenu = ({ setLanguage, language }) => {
             <nav className="top-menu">
                 <a className='menu' href="#above-about">Sobre mí</a>
                 <a href="#above-experience">Experiencia</a>
-                <a href="#contact">Contacto</a>
+                <a href="mailto:alexandre.arabian.j@gmail.com" title='alexandre.arabian.j@gmail.com'>Contacto</a>
                 <LanguageSelector languageSelector={'Idioma'} setLanguage={setLanguage} />
             </nav>
         );
