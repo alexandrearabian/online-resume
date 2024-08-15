@@ -25,7 +25,7 @@ const DownloadElement = ({ type, url, filename, children, icon }) => {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                <button className="element CV">
+                <button className="element">
                     {icon &&
                         <span style={{ marginRight: '0.5em' }}>
                             <FontAwesomeIcon icon={icon} />
