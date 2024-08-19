@@ -5,9 +5,9 @@ const AboutMe = ({ wordInView, language }) => {
             <div>
                 <h1><span className={`color-transition-word ${wordInView ? 'in-view' : ''}`}>Sobre</span> mí</h1>
                 <p className={`about-me-despcription ${wordInView ? '' : 'hidden-about-me-despcription'}`}>
-                    Soy estudiante de Ingeniería Informática en mi último año de universidad, buscando aplicar y perfeccionar mis conocimientos.<br />
-                    Mi emoción por programar, junto a mi pasión por el arte y la creación, me motivan a seguir aprendiendo y mejorando.<br />
-                    Entrar en el desarrollo web es una experiencia maravillosa, y ansío descubrir todo lo que tiene para ofrecer.
+                    Soy una persona activa y creativa con una pasión por el arte digital, el ajedrez y la programación. <br />
+                    Con una buena base en diversos lenguajes de programación, y entusiasmo por la resolución de problemas, aporto tanto conocimiento como creatividad a mi trabajo.<br />
+                    Siempre estoy emocionado de asumir nuevos desafíos y sacar el máximo provecho de ellos. <br />
                 </p>
             </div >);
     }
@@ -17,9 +17,10 @@ const AboutMe = ({ wordInView, language }) => {
             <div>
                 <h1><span className={`color-transition-word ${wordInView ? 'in-view' : ''}`}>About</span> Me</h1>
                 <p className={`about-me-despcription ${wordInView ? '' : 'hidden-about-me-despcription'}`}>
-                    I am Computer Engineering student in my final year of college, looking to apply and improve my knowledge.<br />
-                    My excitement for coding, together with my passion for art and creation, greatly motivate me to keep learning and improving.<br />
-                    Getting into Web Development is a beatiful journey, and I am looking forward to discover everything it has to offer.
+
+                    I am an active and creative person with a passion for digital art, chess, and coding. <br />
+                    With a strong foundation in different programming languages and excitement for problem-solving, I bring both expertise and creativity to my work. <br />
+                    I am always excited to take on new challenges and make the most out of them. <br />
                 </p>
             </div >);
     }
