@@ -54,6 +54,12 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+
+  appearance: none;
+  /* Removes default button styles in Safari and others */
+  -webkit-appearance: none;
+  /* Removes default button styles in iOS/Safari */
+  text-decoration: none;
 }
 
 button:hover {
